@@ -1,0 +1,52 @@
+=> O programa é escrito em Python
+
+=> O algoritmo a ser executado é o final.py
+
+=> A lista de SAS deve ser inserida no arquivo lista.txt. A lista deve conter transcritos rítmicos tanto em CI quanto em CV.
+
+=> O arquivo de saída é arq_final.txt
+
+=> O arquivo test.txt contém os transcritos do relógio circadiano que são expressos tanto em CI quanto em CV e podem ser usados para testar o programa. O teste pode ser feito: 
+(1) copiando a lista de transcritos em test.txt no arquivo lista.txt.
+(2) executando o algoritmo final.py
+(3) verficando o resultado final em arq_final.txt
+
+
+
+
+
+Descrição dos algoritmos:
+
+O programa é composto por 5 algoritmos: final.py, find_probe.py, make_arq.py, find_peak e compare_phase.py.
+
+-O algoritmo final tem como objetivo concentrar os outros quatro algoritmos, chamando-os na ordem de execução do programa.
+
+-O algoritmo find_probe.py tem como objetivo converter a nomenclatura dos transcritos na lista para a nomenclatura encontrada em C1_ritm.txt e C2_ritm.txt.
+
+-O algoritmo make_arq.py tem dois objetivos: (1) copiar os dados de expressão em  C1_ritm.txt e C2_ritm.txt dos transcritos desejados escritos em  prob_list_C1.txt para um novo arquivo;
+ e (2) calcular o zero relativo para os transcritos desejados em cada uma das coletas. 
+
+-O algoritmo find_peak.py tem como objetivo identificar os picos dos transcritos de interesse.
+
+-O algoritmo compare_phase.py seleciona os transcritos que tem somente um pico e são expressos em CI e CV e compara eles.
+
+
+Descrição dos arquivos:
+
+O programa é composto por 13 arquivos em txt.
+
+-O arquivo lista.txt é o arquivo de entrada, em que o usuário insere a lista de transcritos a serem analisados.
+
+-O arquivo C1_probe.txt contém as informações para a conversão da nomenclatura dos transcritos.
+
+-O arquivo prob_list_C1.txt contém a lista de transcritos em lista.txt com a nomenclatura convertida por find_probe.py
+
+-Os arquivos C1_ritm.txt e C2_ritm.txt contém os dados de expressão de todos os transcritos rítmicos em CI e CV, respectivamente.
+
+-Os arquivos expressao_C1.txt e expressao_C2.txt contém os dados de expressão dos transcritos de interesse inseridos em lista.txt.
+
+-Os arquivos zero_C1.txt e zero_C2.txt contém o valor do zero relativo para CI e CV, respectivamente, para os transcritos de interesse.
+
+-Os arquivos dados_C1.txt e dados_C2.txt as informações sobre os picos e vales para cada transcrito de interesse, para as coletas CI e CV, respectivamente.
+
+-O arquivo arq_final.txt contém informações sobre o período, fase, amplitude e pico ou vale em ZT18 para cada transcrito de interesse.
